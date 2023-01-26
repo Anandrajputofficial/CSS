@@ -1,0 +1,64 @@
+(1) Why CSS selectors are used in HTML?
+
+CSS selectors are used in HTML to select specific elements or groups of elements in an HTML document, in order to apply styles to them. CSS (Cascading Style Sheets) is a language used for describing the presentation of a document written in a markup language such as HTML.
+
+CSS selectors allow you to target specific HTML elements by their tag name, class name, or id, and apply styles to them. This allows you to separate the presentation of a website from its structure and content, making it easier to maintain and update the design of a website.
+
+For example, you could use a CSS selector to select all <p> elements on a page and make their text red:
+
+p {
+  color: red;
+}
+
+You can also use CSS selectors to target specific elements based on their id or class, like this:
+
+<div id="header">...</div>
+<div class="nav">...</div>
+
+#header { 
+  background-color: #ccc;
+}
+
+.nav {
+  font-size: 20px;
+}
+This way you can apply different styles to different elements, giving you a lot of control over the design and layout of your website.
+
+
+(2) What are the different types of selectors in CSS?
+
+There are several types of CSS selectors, including:
+
+Type selectors: Select elements based on their HTML tag name.
+Class selectors: Select elements based on their class attribute.
+ID selectors: Select elements based on their id attribute.
+Attribute selectors: Select elements based on an attribute and its value.
+Pseudo-class selectors: Select elements based on a specific state or relation to other elements.
+Pseudo-elements selectors: Select a specific part of an element.
+Each selector type is used to select elements on a web page and apply styles to them. These selectors can be combined to select specific elements and apply styles with more precision.
+
+(3) How do you include external fonts and apply them?
+
+There are several ways to include external fonts and apply them in a website. Here are a few common methods:
+
+Using @font-face: You can use the @font-face rule in CSS to include external fonts and apply them to specific elements on your website.
+
+
+@font-face {
+    font-family: 'My Font';
+    src: url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'My Font', Arial, sans-serif;
+}
+Using a font service: You can also use a font service such as Google Fonts, Adobe Fonts, or Typekit to include external fonts on your website. These services host the font files and provide the CSS code you need to include the fonts on your website.
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+Using an external CSS file: You can also use an external CSS file that defines the font-face rules and then link to that file in the head of your HTML document.
+
+
+<link href="path/to/myfonts.css" rel
